@@ -1,23 +1,22 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-// import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Tooltip, Button } from "@mui/material";
 import Modal from "@mui/material/Modal";
 import { useDispatch, useSelector } from "react-redux";
 import { reset } from "../../CounterSlice";
 
-const style = {
+const style = (theme) => ({
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: 300,
   bgcolor: "#6B7280",
-  boxShadow: 100,
+  boxShadow: 24,
   p: 4,
   borderRadius: "5px",
-};
+});
 
 export default function BasicModal({ open, handleClose }) {
   const dispatch = useDispatch();

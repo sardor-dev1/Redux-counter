@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { changeColor } from "../../ColorSlice";
 
 const colors = [
+  "bg-black",
   "bg-red-500",
   "bg-green-500",
   "bg-blue-500",
